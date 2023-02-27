@@ -31,10 +31,10 @@ const CriptoGenerator = () => {
         <div className='main-container'>
 
             <div>
-                <img src={imgCripto} alt="" />
+                <img className='animate__animated animate__backInLeft' src={imgCripto} alt="" />
             </div>
 
-            <div className='app-container'>
+            <div className='app-container animate__animated animate__bounceInDown'>
 
                 <h1>Cotizador de Criptomonedas</h1>
 
