@@ -1,0 +1,31 @@
+
+.info-img img{
+    width: 10px;
+}
+
+.info p{
+    font-size: 1.1em;
+}
+
+.info p span{
+    color: transparent;
+    font-weight: 600;
+    background-image: linear-gradient(45deg, var(--primary-color) 50%, var(--main-color)5%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-align: center;
+}
+
+
+@media (max-width: 950px){
+
+    .info p{
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 850px){
+    .info p{
+        font-size: 1em;
+    }
+}

@@ -1,0 +1,135 @@
+
+:root{
+    --bg-color: #111827;
+    --text-color: #fff;
+    --main-color: #00e19b;
+    --primary-color: #ffab23;
+}
+
+*{
+    margin: 0;
+}
+
+.main-container{
+    margin: 0;
+    width: 100%;
+    height: 105vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.main-container img{
+    width: 480px;
+}
+
+.app-container{
+    width: 410px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.app-container h1{
+    color: transparent;
+    font-weight: 600;
+    background-image: linear-gradient(45deg, var(--primary-color) 50%, var(--main-color)5%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.app-container form div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.app-container form select{
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    padding: 15px;
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 1.2em;
+}
+
+.app-container form button{
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: var(--main-color);
+    color: white;
+    font-weight: 600;
+    font-size: 1.2em;
+    margin-top: 15px;
+}
+
+
+.info-container{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 150px;
+    gap: 10px;
+}
+
+.info-container img{
+    width: 100px;
+}
+
+
+@media (max-width: 950px){
+
+    .main-container img{
+        width: 400px;
+    }
+
+    .app-container{
+        width: 380px;
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .app-container h1{
+        color: transparent;
+        font-weight: 600;
+        background-image: linear-gradient(45deg, var(--primary-color) 50%, var(--main-color)5%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        font-size: 2.4em;
+        text-align: center;
+    }
+
+    .info-container img{
+        width: 100px;
+    }
+}
+
+@media (max-width: 850px){
+
+    .main-container img{
+        width: 340px;
+    }
+
+    .main-container{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .app-container{
+        width: 90%;
+    }
+
+    .info-container img{
+        width: 100px;
+    }
+
+}
