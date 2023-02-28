@@ -7,6 +7,7 @@ import { useState } from 'react';
 import '../../public/style/CriptoGeneratorStyle/CriptoGeneratorStyle.css';
 import imgCripto from '../assets/img/imageCripto2.png'
 import { Loader } from './Loader';
+import { Validations } from './Validations';
 
 const CriptoGenerator = () => {
 
@@ -24,6 +25,8 @@ const CriptoGenerator = () => {
             setShowInfo(false)
         }, 10000);
     }
+
+    console.log(criptoValue === '', monedaValue === '', showInfo)
 
   return (
     <>
@@ -73,6 +76,12 @@ const CriptoGenerator = () => {
                                 <p></p>
 
                         </div>
+
+                        {showInfo === true && monedaValue === '' || showInfo === true && criptoValue === ''
+                        
+                        ?  (<Validations/>)
+
+                        : <></>}
 
                         <button>Consultar</button>
 

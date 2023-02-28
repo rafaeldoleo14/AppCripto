@@ -1,0 +1,11 @@
+
+.validate-container{
+    background-color: red;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.validate-container p{
+    text-align: center;
+    text-transform: uppercase;
+}
