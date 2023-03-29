@@ -1,13 +1,14 @@
-import { getCripto } from '../data/ApiData';
-import { useGetResults } from '../hooks/useGetResult';
-import { useForm } from '../hooks/useForm';
-import { InfoCriptos } from './InfoCriptos';
-import { OptionCripto } from './OptionCripto';
+
 import { useState } from 'react';
-import '../../public/style/CriptoGeneratorStyle/CriptoGeneratorStyle.css';
-import imgCripto from '../assets/img/imageCripto2.png'
-import { Loader } from './Loader';
-import { Validations } from './Validations';
+import './CriptoGenerator.css';
+import imgCripto from '../../assets/img/imageCripto2.png'
+import { getCripto } from '../../data/ApiData';
+import { useForm } from '../../hooks/useForm';
+import { useGetResults } from '../../hooks/useGetResult';
+import { OptionCripto } from '../OptionCripto';
+import { Validations } from '../Validations/Validations';
+import { InfoCriptos } from '../InfoCriptos/InfoCriptos';
+import { Loader } from '../Loader';
 
 const CriptoGenerator = () => {
 
@@ -25,8 +26,6 @@ const CriptoGenerator = () => {
             setShowInfo(false)
         }, 10000);
     }
-
-    console.log(criptoValue === '', monedaValue === '', showInfo)
 
   return (
     <>

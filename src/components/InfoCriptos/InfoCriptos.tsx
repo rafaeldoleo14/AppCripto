@@ -1,6 +1,6 @@
 
-import { Loader } from './Loader';
-import '../../public/style/InfoCriptosStyle/InfoCriptosStyle.css'
+import { Loader } from '../Loader';
+import './InfoCriptos.css'
 
 interface infoCriptosProps {
     getInfo?: {
